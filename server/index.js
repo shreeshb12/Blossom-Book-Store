@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express();
-const Book=require('./models/book');
-const db=require('./config/mongoose');
+const Book=require('../models/book');
+const db=require('../config/mongoose');
 
 // handles post requests
 app.use(express.json());
