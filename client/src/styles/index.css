@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cursive{
+  font-family: Great Vibes, cursive;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: larger;
+  margin-left: 10px;
+}
+
+.MuiToolbar-root h2{
+  margin: 10px 0 !important;
+}
