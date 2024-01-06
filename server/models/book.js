@@ -22,7 +22,7 @@ const bookSchema=new mongoose.Schema({
         required:true
     },
     image:{
-        type:boolean
+        type:String
     }
 })
 
