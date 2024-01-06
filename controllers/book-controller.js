@@ -13,13 +13,14 @@ module.exports.getAllBooks=async (req,res)=>{
 
 module.exports.addBook= async (req,res)=>{
     console.log(req.body);
-    const {name,author,description,price,available} = req.body;
+    const {name,author,description,price,available,image} = req.body;
     let book=new Book({
         name,
         author,
         description,
         price,
-        available
+        available,
+        image
     });
     try{
         let resp= await book.save()
@@ -50,7 +51,7 @@ module.exports.getById=async (req,res)=>{
 
 module.exports.update=async (req,res)=>{
     const id=req.params.bookId;
-    const {name,author,description,price,available}=req.body;
+    const {name,author,description,price,available,image}=req.body;
     let book;
     try{
             book = await Book.findByIdAndUpdate(id,{
@@ -58,7 +59,8 @@ module.exports.update=async (req,res)=>{
             author,
             description,
             price,
-            available
+            available,
+            image
         },{new:true})
         if(!book)
         {
