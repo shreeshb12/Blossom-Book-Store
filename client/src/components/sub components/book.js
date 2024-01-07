@@ -3,7 +3,7 @@ import React from 'react'
 
 const Book = (props) => {
     console.log(props.book);
-    const {name,description,author,price,available,image}=props.book;
+    const {name,description,author,price,image}=props.book;
   return (
     <div className='card'>
         <div className='book-top'>

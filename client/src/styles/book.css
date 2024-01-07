@@ -10,6 +10,7 @@ ul{
     width:170px;
     overflow:wrap;
     box-shadow: 5px 5px 5px #ccc;
+    margin: 10px;
 }
 
 .book-top{
