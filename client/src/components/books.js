@@ -19,7 +19,7 @@ const Books = () => {
       {books.length===0?<h1>Loading...</h1>:
       <ul>
         {books.map((book,i)=>(
-          <li key={i} className='book'>
+          <li key={book._id} id={book._id} className='book'>
             <Book book={book}/>
           </li>
       ))}
