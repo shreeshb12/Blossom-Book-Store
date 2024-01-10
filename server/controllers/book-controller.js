@@ -87,7 +87,10 @@ module.exports.deleteBook=async(req,res)=>{
     try{
         let book=await Book.findByIdAndDelete(id);
         if(book!=null)
+        {
             res.status(203).json({message:"Book Deleted"})
+            return;
+        }
         res.status(404).json({message:"Book Not Found"});
     }
     catch(err)

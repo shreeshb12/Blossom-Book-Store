@@ -7,8 +7,9 @@ const DeleteBook = () => {
     const navigate=useNavigate();
     useEffect(()=>{
         const deleteBook=async ()=>{
-            const resp=await axios.delete(`http://localhost:3000/books/${id}`)
+            const resp=await axios.delete(`http://localhost:5000/book/${id}`)
             console.log(resp.data);
+            alert(resp.data.message);
             navigate('../../');
         }
         deleteBook();
