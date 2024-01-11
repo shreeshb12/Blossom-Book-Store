@@ -4,9 +4,13 @@ import React from 'react'
 
 const Book = (props) => {
     console.log(props.book);
+    const index=props.index;
+    const dynamicDelay={
+        transitionDelay:`${index * 1}s`
+    }
     const {_id,name,description,author,price,image}=props.book;
   return (
-    <div className='card'>
+    <div className='card animate__animated animate__zoomIn' style={dynamicDelay} animate__zoomIn>
         <div className='book-top'>
             <img alt='no-img' src={image} className='img'/>
             <div className='overlay' id='description'>

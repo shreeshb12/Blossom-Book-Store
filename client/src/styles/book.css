@@ -3,6 +3,7 @@ ul{
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
+    transition: all 1s ease-in-out;
 }
 
 .card{
@@ -11,6 +12,7 @@ ul{
     overflow:wrap;
     box-shadow: 5px 5px 5px #ccc;
     margin: 10px;
+    
 }
 
 .book-top{
@@ -74,3 +76,5 @@ h3{
     display: flex;
     justify-content: space-between;
 }
+
+
